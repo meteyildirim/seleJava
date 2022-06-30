@@ -1,0 +1,50 @@
+1- Create Java Project
+
+2- Convert Project to Maven Project
+
+3- Get dependicies from Maven Repo
+
+####################
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependencies>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.3.0</version>
+</dependency>
+</dependencies>
+
+
+#####################
+
+4- add the above code into POM file, just before <build> tag and after <version> tag
+this will download all selenium jar files . save the file. you should see a new folder Maven Dependencies
+
+
+5- selenium web drivers for chorem, firefox, safari is also there in Maven.
+Copy them to POM file and save it
+
+6- Add TestNG dependency from Maven as well
+
+7- Chrome driver indirilmesi ve path girilmesi
+8- driver.getTitle(), driver.close(), driver.getCurrentUrl(), driver.quit(), driver.get(URL)
+
+
+######## Locators ############
+
+9- locate by ID, by Xpath, by CSS
+10- driver.findElement(By.id("username"))
+11. driver.findElement(By.id("username")).sendKeys("mete");
+12. css selector tagname.attribute
+
+13. implicit wait : 
+
+
+
+
+
+
+
+
+
